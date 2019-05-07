@@ -1,0 +1,10 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: node-server1-service
+spec:
+  selector:
+    app: node-server1
+  ports:
+  - protocol: TCP
+    port: 5551

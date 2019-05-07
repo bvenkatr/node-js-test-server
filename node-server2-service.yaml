@@ -1,0 +1,10 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: node-server2-service
+spec:
+  selector:
+    app: node-server2
+  ports:
+  - protocol: TCP
+    port: 5552

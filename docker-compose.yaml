@@ -1,0 +1,12 @@
+version: "3"
+services:
+  node-server1:
+    # replace username/repo:tag with your name and image details
+    image: bvenkatr/node-server1:1
+    ports:
+      - "5551:5551"
+  node-server2:
+    # replace username/repo:tag with your name and image details
+    image: bvenkatr/node-server2:1
+    ports:
+      - "5552:5552"

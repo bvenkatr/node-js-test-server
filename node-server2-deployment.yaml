@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: node-server2-deployment 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: node-server2
+    spec:
+      hostname: node-server2
+      containers:
+      - name: node-server2
+        image: bvenkatr/node-server2:1
+        ports:
+        - containerPort: 5552
